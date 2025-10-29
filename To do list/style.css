@@ -1,0 +1,71 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5vh;
+}
+.container{
+    border: 2px solid forestgreen;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vh;
+    width: 50vh;
+    height: auto;
+    background-color: rgb(162, 79, 158);
+}
+input{
+    margin-right: 1vh;
+    height: 4.5vh;
+    width: 30vh;
+    border-radius: 20px 10px 20px 10px;
+}
+button{
+    width: 8vh;
+    height: 3.5vh;
+    border-radius: 50px 20px 50px 20px;
+
+}
+button:hover{
+    background-color: rgb(129, 205, 129);
+}
+li {
+  /* background-color: white; */
+  margin-bottom: 1vh;
+  padding: 1vh 1.5vh;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between; /* 👈 text left, button right */
+  align-items: center;
+  font-size: 16px;
+}
+li button {
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+li button:hover {
+  background-color: red;
+  color: white;
+}
+h2{
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+    color: rgb(33, 249, 249);
+    text-decoration: underline;
+}
+
