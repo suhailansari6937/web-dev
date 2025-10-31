@@ -1,7 +1,12 @@
 // let ul = document.querySelector("ul");
 let btn = document.querySelector("#listTask");
+let input= document.querySelector("input");
 btn.addEventListener("click", addTask);
 
+input.addEventListener("keypress", function(event){
+    if(event.key== "Enter")
+        addTask();
+})
 
 function addTask(){
     
@@ -18,9 +23,10 @@ function addTask(){
     li.appendChild(delBtn);
     ul.appendChild(li);
     input.value="";
+    
     delBtn.addEventListener("click", function(){
         li.remove();
-    })
+    });
 
 }
 }
